@@ -2,9 +2,8 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import ContentWrapper from '@/components/wrappers/ContentWrapper';
 import ButtonWrapper from '@/components/wrappers/ButtonWrapper';
-import ImageGalleryStyles from 'react-image-gallery/styles/css/image-gallery.css';
-import ImageGallery from 'react-image-gallery';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 
 export default function Home() {
@@ -49,10 +48,20 @@ export default function Home() {
               <div className='flex flex-col items-center text-center justify-center w-full'>
                 <div className='relative w-64 xsm:w-80'>
                   {/* <Image src={'/art/personal_6.png'} layout="responsive" sizes="50vw" width="64" height="64" /> */}
-                  <ImageGallery
-                    className={ImageGalleryStyles} items={images} lazyLoad={true} showThumbnails={true}
-                    showPlayButton={false} showFullscreenButton={false} useBrowserFullscreen={false}
-                  />
+                  <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} showIndicators={true}>
+                    <div>
+                      <Image src={'/art/personal_1.png'} layout="responsive" sizes="50vw" width="64" height="64" />
+                    </div>
+                    <div>
+                      <Image src={'/art/personal_2.png'} layout="responsive" sizes="50vw" width="64" height="64" />
+                    </div>
+                    <div>
+                      <Image src={'/art/personal_5.png'} layout="responsive" sizes="50vw" width="64" height="64" />
+                    </div>
+                    <div>
+                      <Image src={'/art/personal_6.png'} layout="responsive" sizes="50vw" width="64" height="64" />
+                    </div>
+                  </Carousel>
                 </div>
               </div>
             </div>
