@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/artifacts/*": ["artifacts/*"],
+      "@/public/*": ["public/*"],
+      "@/pages/*": ["pages/*"],
+      "@/components/*": ["components/*"],
+      "@/contexts/*": ["contexts/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/enum/*": ["enum/*"],
+      "@/lexicon/*": ["lexicon/*"],
+      "@/utils/*": ["utils/*"]
+    }
+  }
+}

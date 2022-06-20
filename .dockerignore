@@ -1,0 +1,7 @@
+Dockerfile
+.dockerignore
+.next
+cache
+node_modules
+test
+dynamodb/docker/*
