@@ -1,7 +1,7 @@
 {
-  "name": "@bumblebuzz/app",
+  "name": "@bumblebuzz/app-demo",
   "version": "0.1.0",
-  "description": "NFT Marketplace app",
+  "description": "NFT Marketplace app landing page",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

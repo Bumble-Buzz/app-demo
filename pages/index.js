@@ -52,10 +52,8 @@ export default function Home() {
                   <ImageGallery
                     className={ImageGalleryStyles} items={images} lazyLoad={true} showThumbnails={true}
                     showPlayButton={false} showFullscreenButton={false} useBrowserFullscreen={false}
-                    />
+                  />
                 </div>
-
-
               </div>
             </div>
 
