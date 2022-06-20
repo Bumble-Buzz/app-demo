@@ -2,8 +2,6 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import ContentWrapper from '@/components/wrappers/ContentWrapper';
 import ButtonWrapper from '@/components/wrappers/ButtonWrapper';
-import Lexicon from '@/lexicon/index';
-import Tooltip from '@/components/Tooltip';
 import ImageGalleryStyles from 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
 
@@ -35,8 +33,6 @@ export default function Home() {
   ];
 
   return (
-    // bg-gradient-to-b from-gray-500 to-gray-900
-    // bg-[url('/art/stars.jpg')]
     <ContentWrapper classes="items-center text-center justify-center">
       {/* Page Content */}
       <div className="flex flex-wrap items-center text-center justify-center relative z-10">
@@ -154,87 +150,6 @@ export default function Home() {
                 </p>
               </ButtonWrapper>
             </div>
-
-            {/* <div className='flex flex-wrap items-center text-center justify-center w-full max-w-3xl'> */}
-
-              {/* commissions */}
-              {/* <div className={`w-full text-gray-900 bg-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:focus:ring-gray-700`}>
-                <p className='pb-2 text-3xl text-indigo-600'>BumbleBuzz Commissions</p>
-                <p className='pb-6 text-sm'>There are many ways to collect commission on BumbleBuzz. This is to help creators earn rewards for their hard work. Given a successful sale, the commission comes from the final sale price and is distributed amongst the creators.</p>
-
-                <ButtonWrapper
-                  onClick={() => ROUTER.push('/')}
-                  classes={`max-w-xs ${COMMISSION_TEXT_STYLE}`}
-                >
-                  <p className='h-fit sm:h-40'>
-                    <span className='text-lg text-indigo-600'>Artist Commission</span>
-                    <br />
-                    <span className=''>All NFTs created through BumbleBuzz are eligible for the artist commission. The artists will have the option to set the commission percentage during the creation process. Every time an NFT is sold the creator of the NFT will receive the artist commission.</span>
-                  </p>
-                </ButtonWrapper>
-                <ButtonWrapper
-                  onClick={() => ROUTER.push('/')}
-                  classes={`max-w-xs ${COMMISSION_TEXT_STYLE}`}
-                >
-                  <p className='h-fit sm:h-40'>
-                    <span className='text-lg text-indigo-600'>Collection Commission</span>
-                    <br />
-                    <span className=''>Collection owners will have the option to turn on collection commission.</span>
-                    <br />
-                    <span className=''>Collection owners will receive the set collection commission every time an NFT from that collection is sold.</span>
-                  </p>
-                </ButtonWrapper>
-                <ButtonWrapper
-                  onClick={() => ROUTER.push('/')}
-                  classes={`max-w-xs ${COMMISSION_TEXT_STYLE}`}
-                >
-                  <p className='h-fit sm:h-40'>
-                    <span className='text-lg text-indigo-600'>Collection Reflection</span>
-                    <br />
-                    <span className=''>Collection owners have the ability to enable the reflection commission, which will result in all NFT owners earning rewards every time an NFT is sold associated with that collection.</span>
-                  </p>
-                </ButtonWrapper>
-                <ButtonWrapper
-                  onClick={() => ROUTER.push('/')}
-                  classes={`max-w-xs ${COMMISSION_TEXT_STYLE}`}
-                >
-                  <p className='h-fit sm:h-40'>
-                    <span className='text-lg text-indigo-600'>Marketplace Commission</span>
-                    <br />
-                    <span className=''>Marketplace commission is a standard 2% from the final sale price.</span>
-                  </p>
-                </ButtonWrapper>
-              </div> */}
-
-              {/* incentives */}
-              {/* <div className={`w-full text-gray-900 bg-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:focus:ring-gray-700`}>
-                <p className='pb-2 text-3xl text-indigo-600'>BumbleBuzz Incentives</p>
-
-                <ButtonWrapper
-                  onClick={() => ROUTER.push('/')}
-                  classes={`max-w-xs ${INCENTIVE_TEXT_STYLE}`}
-                >
-                  <p className='h-fit sm:h-40'>
-                    <span className='text-lg text-indigo-600'>Marketplace Incentive</span>
-                    <br />
-                    <span className=''>Marketplace incentive is in place to counter the marketplace commission, reducing or eliminating them.</span>
-                  </p>
-                </ButtonWrapper>
-                <ButtonWrapper
-                  onClick={() => ROUTER.push('/')}
-                  classes={`max-w-xs ${INCENTIVE_TEXT_STYLE}`}
-                >
-                  <p className='h-fit sm:h-40'>
-                    <span className='text-lg text-indigo-600'>Collection Incentive</span>
-                    <br />
-                    <span className=''>NFT buyers will receive the set collection incentive every time an NFT from that collection is sold. The collection incentive is funded from the collection incentive pool. This reward will help buyers counter against the collection commission.</span>
-                  </p>
-                </ButtonWrapper>
-              </div> */}
-
-            {/* </div> */}
-
-            
 
           </div>
 
