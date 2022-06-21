@@ -12,7 +12,7 @@ export default function ContentWrapper({ children, ...props }) {
       <div
         className={`flex flex-nowrap w-full bg-repeat ${classes}`}
         // style={{minHeight: '500px'}}
-        style={{backgroundImage: "url('/bg/stars5.jpg')"}}
+        style={{backgroundImage: "url('https://bumblebuzz.s3.us-east-1.amazonaws.com/demo/stars5.jpg')"}}
         {...props}
       >
         {/* <Image

@@ -12,25 +12,6 @@ export default function Home() {
   const COMMISSION_TEXT_STYLE = 'text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700';
   const INCENTIVE_TEXT_STYLE = 'text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700';
 
-  const images = [
-    {
-      original: '/art/personal_1.png',
-      thumbnail: '/art/personal_1.png',
-    },
-    {
-      original: '/art/personal_2.png',
-      thumbnail: '/art/personal_2.png',
-    },
-    {
-      original: '/art/personal_5.png',
-      thumbnail: '/art/personal_5.png',
-    },
-    {
-      original: '/art/personal_6.png',
-      thumbnail: '/art/personal_6.png',
-    },
-  ];
-
   return (
     <ContentWrapper classes="items-center text-center justify-center">
       {/* Page Content */}
@@ -48,19 +29,12 @@ export default function Home() {
               <div className='flex flex-col items-center text-center justify-center w-full'>
                 <div className='relative w-64 xsm:w-80'>
                   {/* <Image src={'/art/personal_6.png'} layout="responsive" sizes="50vw" width="64" height="64" /> */}
+                  {/* <img src="https://bumblebuzz.s3.us-east-1.amazonaws.com/demo/art6.jpg" /> */}
                   <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} showIndicators={true}>
-                    <div>
-                      <Image src={'/art/personal_1.png'} layout="responsive" sizes="50vw" width="64" height="64" />
-                    </div>
-                    <div>
-                      <Image src={'/art/personal_2.png'} layout="responsive" sizes="50vw" width="64" height="64" />
-                    </div>
-                    <div>
-                      <Image src={'/art/personal_5.png'} layout="responsive" sizes="50vw" width="64" height="64" />
-                    </div>
-                    <div>
-                      <Image src={'/art/personal_6.png'} layout="responsive" sizes="50vw" width="64" height="64" />
-                    </div>
+                    <img src="https://bumblebuzz.s3.us-east-1.amazonaws.com/demo/art6.jpg" />
+                    <img src="https://bumblebuzz.s3.us-east-1.amazonaws.com/demo/art2.jpg" />
+                    <img src="https://bumblebuzz.s3.us-east-1.amazonaws.com/demo/art5.jpg" />
+                    <img src="https://bumblebuzz.s3.us-east-1.amazonaws.com/demo/art1.jpg" />
                   </Carousel>
                 </div>
               </div>
