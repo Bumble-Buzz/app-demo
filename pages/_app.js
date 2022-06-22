@@ -28,7 +28,7 @@ function MyApp({ Component }) {
         pauseOnHover
       />
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Component />
       {/* <Footer /> */}
     </>
