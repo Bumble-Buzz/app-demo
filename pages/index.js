@@ -17,13 +17,12 @@ export default function Home() {
   const INCENTIVE_TEXT_STYLE = 'text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-900 dark:hover:border-gray-600 dark:focus:ring-gray-700';
   const GALLERY_BOX_STYLE = 'text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-1 py-1 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700';
 
-
   return (
     <main className='flex flex-nowrap flex-col items-center px-0 py-0 w-full bg-black'>
 
       {/* main landing area */}
       <div className='relative w-full h-screen'>
-        <Image className='z-0' src={BgLanding} layout="fill" objectFit="cover" quality={1} priority={true} />
+        <Image alt="stars" className='z-0' src={BgLanding} layout="fill" objectFit="cover" quality={1} priority={true} />
         <div className='flex flex-wrap items-center text-center justify-center z-10 w-full'>
 
           <div className='flex flex-col items-center text-center justify-center w-full absolute inset-0'>
@@ -41,7 +40,7 @@ export default function Home() {
                   classes="gap-x-1 items-center bg-gray-100 hover:bg-gray-300 focus:ring-gray-500"
                 ><MediumSolid height={24} width={24} /></ButtonWrapper>
                 <ButtonWrapper
-                  onClick={() => window.open('https://google.ca/', '_blank')}
+                  onClick={() => window.open('https://discord.gg/FgF3Pp5H', '_blank')}
                   classes="gap-x-1 items-center bg-gray-100 hover:bg-gray-300 focus:ring-gray-500"
                 ><DiscordSolid height={24} width={24} /></ButtonWrapper>
                 <ButtonWrapper
@@ -76,7 +75,7 @@ export default function Home() {
           <div className={`max-w-xs ${COMMISSION_TEXT_STYLE}`}>
             <p className='relative flex flex-col items-center text-center justify-center h-fit'>
               <div className='w-20'>
-                <Image className='' src={PicRoshi} layout="responsive" sizes="50vw" width={32} height={64} quality={50} />
+                <Image alt="roshi" className='' src={PicRoshi} layout="responsive" sizes="50vw" width={32} height={64} quality={50} />
               </div>
               <span className='text-lg text-indigo-600'>0xRoshi</span>
               <span className=''>Co-Founder - Extensive experience in Frond-End and Back-End software development. Recently shifted focus on the Web 3.0 world. Responsible for all technical development of BumbleBuzz.</span>
@@ -87,7 +86,7 @@ export default function Home() {
           <div className={`max-w-xs ${COMMISSION_TEXT_STYLE}`}>
             <p className='relative flex flex-col items-center text-center justify-center h-fit'>
               <div className='w-20'>
-                <Image className='' src={PicMystique} layout="responsive" sizes="50vw" width={32} height={64} quality={50} />
+                <Image alt="mystique" className='' src={PicMystique} layout="responsive" sizes="50vw" width={32} height={64} quality={50} />
               </div>
               <span className='text-lg text-indigo-600'>0xMystique</span>
               <span className=''>Co-Founder - Extensive experience in marketing and human resources. Recently shifted focus on the Web 3.0 world. Responsible for marketing, technical writing, and hiring for BumbleBuzz.</span>
@@ -100,7 +99,7 @@ export default function Home() {
 
       {/* vision */}
       <div className='relative w-full [height:calc(100vh)] xsm:[height:calc(75vh)] sm:[height:calc(50vh)]'>
-        <Image className='z-0' src={BgAboutUs} layout="fill" objectFit="cover" quality={100} />
+        <Image alt="bricks" className='z-0' src={BgAboutUs} layout="fill" objectFit="cover" quality={100} />
         <div className='flex flex-wrap items-center text-center justify-center z-10 w-full'>
 
           <div className='flex flex-col items-center text-center justify-center w-full absolute inset-0'>
@@ -133,7 +132,7 @@ export default function Home() {
         <div className='flex flex-row flex-wrap items-end text-center justify-evenly w-full gap-4'>
           <div className={`flex lg:flex-1 w-full ${GALLERY_BOX_STYLE}`}>
             <div className='relative w-full [height:calc(50vh)]'>
-              <Image src={PicCommission} layout="fill" objectFit="cover" quality={50} />
+              <Image alt="galaxy" src={PicCommission} layout="fill" objectFit="cover" quality={50} />
             </div>
           </div>
           <div className='flex flex-col flex-wrap max-w-2xl'>
@@ -202,7 +201,7 @@ export default function Home() {
           </div>
           <div className={`flex lg:flex-1 w-full ${GALLERY_BOX_STYLE}`}>
             <div className='relative w-full [height:calc(50vh)]'>
-              <Image src={PicIncentive} layout="fill" objectFit="cover" quality={50} />
+              <Image alt="beach" src={PicIncentive} layout="fill" objectFit="cover" quality={50} />
             </div>
           </div>
         </div>
@@ -210,7 +209,7 @@ export default function Home() {
 
       {/* ecosystem */}
       <div className='relative w-full [height:calc(100vh)] xsm:[height:calc(75vh)] sm:[height:calc(50vh)]'>
-        <Image className='z-0' src={BgAboutUs} layout="fill" objectFit="cover" quality={100} />
+        <Image alt="bricks" className='z-0' src={BgAboutUs} layout="fill" objectFit="cover" quality={100} />
         <div className='flex flex-wrap items-center text-center justify-center z-10 w-full'>
 
           <div className='flex flex-col items-center text-center justify-center w-full absolute inset-0'>
